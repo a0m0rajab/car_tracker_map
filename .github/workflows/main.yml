@@ -27,7 +27,7 @@ jobs:
 
       - name: Deploy
         run: |
-          cd dist
+          cd out
           ln -s index.html 404.html
           if [ "none" !=  ${{ inputs.cname }} ]; then echo '${{ inputs.cname }}' > CNAME; fi
           git config --global user.email "${{ inputs.gitemail }}"
