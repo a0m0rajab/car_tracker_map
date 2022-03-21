@@ -29,24 +29,24 @@ export default function profile() {
                         <Item>
                             <Stack spacing={2} justifyContent="center"
                                 alignItems="center">
-                                <Avatar sx={{ bgcolor: deepPurple[500] }}>OP</Avatar>
+                                <Avatar sx={{ bgcolor: deepPurple[500] }}>AA</Avatar>
                                 <TextField
                                     disabled
-                                    id="outlined-disabled"
-                                    label="Disabled"
-                                    defaultValue="Hello World"
+                                    id="Name"
+                                    label="Name"
+                                    defaultValue="Ahmet"
                                 />
                                 <TextField
                                     disabled
-                                    id="outlined-disabled"
-                                    label="Disabled"
-                                    defaultValue="Hello World"
+                                    id="Surname"
+                                    label="Surname"
+                                    defaultValue="Ak"
                                 />
                                 <TextField
                                     disabled
-                                    id="outlined-disabled"
-                                    label="Disabled"
-                                    defaultValue="Hello World"
+                                    id="username"
+                                    label="username"
+                                    defaultValue="A.Random.username"
                                 />
 
                             </Stack>

@@ -4,10 +4,8 @@ import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
-import Avatar from '@mui/material/Avatar';
-import Head from 'next/head'
-import styles from '../../styles/Home.module.css';
-import { deepPurple } from '@mui/material/colors';
+import ButtonGroup from '@mui/material/ButtonGroup';
+import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -28,19 +26,23 @@ export default function profile() {
               <Stack spacing={2} justifyContent="center"
                 alignItems="center">
                 <TextField
-                  disabled
-                  id="outlined-disabled"
-                  label="Disabled"
-                  defaultValue="Hello World"
+                  id="uesrname"
+                  label="User Name"
+                  defaultValue=""
                 />
                 <TextField
-                  disabled
-                  id="outlined-disabled"
-                  label="Disabled"
-                  defaultValue="Hello World"
+                  id="password"
+                  label="Password"
+                  defaultValue=""
+                  type="password"
                 />
 
               </Stack>
+              <br />
+              <ButtonGroup disableElevation variant="contained">
+                <Button>Login</Button>
+                <Button href="./register">Register</Button>
+              </ButtonGroup>
             </Item>
 
           </Stack>      </Container>
