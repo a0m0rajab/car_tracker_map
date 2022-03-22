@@ -27,11 +27,11 @@ jobs:
       
 
     - name: Installing my packages
-      run: npm ci
+      run: yarn install --frozen-lockfile
 
-    - name: Build my App  
-      run: npm run build
-    - run: npm run export
+
+    - name: Build and export my App  
+      run: yarn export
     - run: touch ./out/.nojekyll
     
     - name: Deploy 🚀
